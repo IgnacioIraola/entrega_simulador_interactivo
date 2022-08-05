@@ -4,19 +4,19 @@ const seleccioneBebida = (bebida, cantidad) => {
       case 1:
         cantCerveza += cantidad;
         total += cantidad * 250;
-        return alert("Elegiste " + cantidad + " de Cervezas");
+        return alert("Elegiste " + cantidad + " Cervezas");
       case 2:
         cantFernet += cantidad;
         total += cantidad * 100;
-        return alert("Elegiste " + cantidad + " de Fernet");
+        return alert("Elegiste " + cantidad + " Fernet");
       case 3:
         cantAperol += cantidad;
         total += cantidad * 50;
-        return alert("Elegiste " + cantidad + " de Aperol");
+        return alert("Elegiste " + cantidad + " Aperol");
       case 4:
         cantGin += cantidad;
         total += cantidad * 10;
-        return alert("Elegiste " + cantidad + " de Gin");
+        return alert("Elegiste " + cantidad + " Gin");
       default:
         alert("Opción incorrecta");
     }
@@ -57,7 +57,7 @@ const seleccioneBebida = (bebida, cantidad) => {
   
   if (total > 0) {
     
-    alert("Compraste :\n" + cantCerveza + " Cervezas \n"+ cantFernet + "Fernet \n" + cantAperol+ "Aperol \n" + cantGin + "Gin \n" + "\nTotal: " + total);
+    alert("Compraste :\n" + cantCerveza + " Cervezas \n"+ cantFernet + " Fernet \n" + cantAperol+ " Aperol \n" + cantGin + " Gin \n" + "\nTotal: " + total);
   } else {
     
     alert("No compraste nada, gracias por tu visita.")
