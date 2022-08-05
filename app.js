@@ -1,4 +1,3 @@
-// Funciones
 const seleccioneBebida = (bebida, cantidad) => {
     console.log("switch");
     switch (bebida) {
@@ -27,21 +26,21 @@ const seleccioneBebida = (bebida, cantidad) => {
     let cantidad;
     let ingreseBebida;
   
-    // ingreseBebida
+    
     ingreseBebida = Number(prompt("Selecciona el número de la bebida deseada: \n1 Cerveza \n2 Fernet \n3 Aperol \n4 Gin \n0 FINALIZAR"));
   
     while (ingreseBebida !== 0) {
-      // seleccioneBebida
-      cantidad = Number(prompt("Ingresá la cantidad de bebidad deseada"));
-      // Llamo a la función
+      
+      cantidad = Number(prompt("Ingresá la cantidad de bebida deseada"));
+      
       seleccioneBebida(ingreseBebida, cantidad);
   
-      // ingreseBebida
+      
       ingreseBebida = Number(prompt("Selecciona el número de la bebida deseada: \n1 Cerveza \n2 Fernet \n3 Aperol \n4 Gin \n0 FINALIZAR"));
     }
   }
   
-  // Variables
+
   let edad = Number(prompt("Ingresá tu edad"));
   let total = 0;
   let cantCerveza = 0;
@@ -49,18 +48,18 @@ const seleccioneBebida = (bebida, cantidad) => {
   let cantAperol = 0;
   let cantGin = 0;
   
-  // Programa
-  if (edad < 18) { // Es MENOR
+  
+  if (edad < 18) { 
     alert("Sos menor de edad no podés ingresar")
-  } else { // Es MAYOR
+  } else { 
     funcionLoop();
   }
   
   if (total > 0) {
-    // le digo cuanto gastó
-    alert("Usted eligió " + cantCerveza + " cervezas, " + "\nTotal: " + total);
+    
+    alert("Compraste :\n" + cantCerveza + " Cervezas \n"+ cantFernet + "Fernet \n" + cantAperol+ "Aperol \n" + cantGin + "Gin \n" + "\nTotal: " + total);
   } else {
-    // Gracias por venir
-    alert("No realizó ninguna compra.")
+    
+    alert("No compraste nada, gracias por tu visita.")
   }
   
